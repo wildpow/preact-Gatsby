@@ -9,17 +9,21 @@
     "gatsby-image": "^2.3.1",
     "gatsby-plugin-manifest": "^2.3.3",
     "gatsby-plugin-offline": "^3.1.2",
+    "gatsby-plugin-preact": "^3.2.1",
     "gatsby-plugin-react-helmet": "^3.2.1",
     "gatsby-plugin-sharp": "^2.5.3",
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-transformer-sharp": "^2.4.3",
+    "preact": "^10.4.0",
+    "preact-compat": "^3.19.0",
     "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "aliasify": "^2.1.0",
+    "prettier": "^1.19.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "keywords": [
     "gatsby"
@@ -40,5 +44,13 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+  },
+  "aliasify": {
+    "aliases": {
+        "react": "preact-compat",
+        "react-dom": "preact-compat",
+        "create-react-class": "preact-compat/lib/create-react-class",
+        "react-dom-factories": "preact-compat/lib/react-dom-factories"
+    }
+}
 }
