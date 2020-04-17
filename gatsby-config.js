@@ -7,6 +7,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-preact`,
     `gatsby-plugin-typescript`,
+    'gatsby-plugin-linaria',
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

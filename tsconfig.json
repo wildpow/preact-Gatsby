@@ -14,7 +14,7 @@
         "name": "typescript-styled-plugin"
       }
     ],
-    "target": "es2015"
+    "target": "es6"
   },
   "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules/*", "public/*"]
